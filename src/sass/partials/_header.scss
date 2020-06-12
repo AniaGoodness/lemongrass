@@ -1,0 +1,89 @@
+.header {
+  padding: ($base-size * 5) 0 ($base-size * 8) 0;
+  color: $color-light;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 600px;
+  background-image: url("https://raw.githubusercontent.com/AniaGoodness/project-pizzeria/master/project-pizzeria/src/images/lemongrass/background_lemon.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  &__wrapper {
+    position: relative;
+    top: 60px;
+  }
+
+}
+
+i {
+  color: $color-danger;
+}
+
+.logo {
+  display: inline-block;
+  line-height: 1;
+  margin-right: 50%;
+  color: $color-light;
+  text-shadow: 0 0 $base-size rgba(0, 0, 0, 0.2);
+
+  &__title {
+    margin: 0 0 $base-size 20px;
+    font-size: ($base-size * 4);
+    font-family: $font-header;
+    font-weight: $font-light;
+    text-transform: uppercase;
+
+    span {
+      font-weight: $font-bold;
+    }
+
+  }
+
+  &__subtitle {
+    margin-left: 20px;
+    font-size: ($base-size * 1.5);
+    font-weight: $font-light;
+    font-style: italic;
+    color: $color-dark;
+  }
+
+}
+
+.navigation {
+  display: block;
+  position: fixed;
+  width: 100%;
+  padding-top: 30px;
+
+  .container {
+    height: auto;
+    display: flex;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    display: block;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 36px 0 0;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-light;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+
+    &.active {
+      color: $color-dark;
+    }
+  }
+}
